@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
+
+body {
+    background-color:#fcf4dd;
+}
+
+#content {
+    width: 80%;
+    background-color:#d5c7e9;
+    text-align: center;
+    margin:60px auto;
+    padding:32px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 4px #00000021;
+}
+#content h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4vw;
+    color:white;
+}
+#social-links {
+    text-align: center;
+    margin:40px auto 80px;
+}
+#social-links ul {
+    list-style-type: none;
+    margin:80px auto 20px;
+    padding:0;
+    display:table;
+    width:600px;
+    text-align: center;
+}
+#social-links li {
+    display:table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+#social-links a {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color:white;
+
+    display:inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+#social-links a:after {
+    background:none repeat scroll 0 0 transparent;
+    bottom:0;
+    content: "";
+    display:block;
+    height:2px;
+    left:50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width:0;
+}
+#social-links a:hover:after {
+    width:100%;
+    left:0;
+}
+
+h3 {
+    margin:0 32px;
+    padding:0;
+    font-family:'Josefin Sans';
+    color:white;
+    text-align: left;
+    font-size: 1vw;
+}
+
+.image-gallery {
+    width:100%;
+    text-align: center;
+    margin:10px 0;
+    padding:0;
+}
+.image-gallery #item {
+    width:30%;
+    position: relative;
+    margin:24px;
+    padding:0;
+    display:inline-block;
+}
+.image-gallery #item img {
+    width:100%;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    margin:0;
+    padding:0;
+}
+.image-gallery #caption {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+.image-gallery #caption-text {
+    color:white;
+    font-family: 'Josefin Sans';
+    opacity: 0;
+    transition: 0.5s ease;
+    margin:0;
+    padding:0;
+}
+
+.image-gallery #item:hover img {
+    filter:blur(5px);
+}
+.image-gallery #item:hover #caption-text {
+    opacity: 1;
+}
