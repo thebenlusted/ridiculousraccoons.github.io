@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
 
 body {
-    background-color:#fcf4dd;
+    background-color:#faf1d6;
 }
 
 #content {
     width: 80%;
-    background-color:#d5c7e9;
+    background-color:#fdafab;
     text-align: center;
     margin:60px auto;
     padding:32px;
@@ -19,6 +19,11 @@ body {
     font-style: italic;
     font-size: 4vw;
     color:white;
+}
+#tagline {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 200;
 }
 #social-links {
     text-align: center;
@@ -39,7 +44,7 @@ body {
 }
 #social-links a {
     font-family: 'Josefin Sans';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2vw;
     text-decoration: none;
     text-transform: uppercase;
@@ -68,7 +73,7 @@ body {
 }
 
 h3 {
-    margin:0 32px;
+    margin:0 120px;
     padding:0;
     font-family:'Josefin Sans';
     color:white;
@@ -79,13 +84,13 @@ h3 {
 .image-gallery {
     width:100%;
     text-align: center;
-    margin:10px 0;
+    margin: 16px 0;
     padding:0;
 }
 .image-gallery #item {
-    width:30%;
+    width:20%;
     position: relative;
-    margin:24px;
+    margin:12px;
     padding:0;
     display:inline-block;
 }
@@ -95,6 +100,7 @@ h3 {
     transition: 0.5s ease;
     margin:0;
     padding:0;
+    filter:blur(18px);
 }
 .image-gallery #caption {
     position: absolute;
@@ -114,8 +120,39 @@ h3 {
 }
 
 .image-gallery #item:hover img {
-    filter:blur(5px);
+    filter:blur(18px);
 }
 .image-gallery #item:hover #caption-text {
     opacity: 1;
+}
+
+
+.footer {
+    margin-top:80px;
+    color:white;
+    font-family: 'Josefin Sans';
+    background-color: #fad4ae;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 10px 4px #00000021;
+}
+.footer p {
+    padding:50px;
+    font-size: 1vw;
+}
+.footer #inner {
+    width:50%;
+    margin:auto;
+    padding:20px;
+}
+.footer a {
+    color:white;
+    text-decoration: underline;
+}
+.footer img {
+    width:15%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px;
 }
