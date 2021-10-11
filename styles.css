@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,700&display=swap');
 
+
 body {
     background-color:#faf1d6;
 }
@@ -19,6 +20,9 @@ body {
     font-style: italic;
     font-size: 4vw;
     color:white;
+
+    animation: text-expander 3.0s ease-in-out;
+    animation-iteration-count: infinite;
 }
 #tagline {
     text-align: center;
@@ -84,7 +88,7 @@ h3 {
 .image-gallery {
     width:100%;
     text-align: center;
-    margin: 16px 0;
+    margin: 10px 0 48px 0;
     padding:0;
 }
 .image-gallery #item {
@@ -100,7 +104,6 @@ h3 {
     transition: 0.5s ease;
     margin:0;
     padding:0;
-    filter:blur(18px);
 }
 .image-gallery #caption {
     position: absolute;
@@ -120,10 +123,21 @@ h3 {
 }
 
 .image-gallery #item:hover img {
-    filter:blur(18px);
+    filter:blur(6px);
 }
 .image-gallery #item:hover #caption-text {
     opacity: 1;
+}
+
+
+.about {
+    background-color: #fad4ae;
+    border-radius: 15px;
+    color:white;
+    font-family: 'Josefin Sans';
+    margin:10px 0;
+    padding:30px;
+    box-shadow: 0px 10px 10px 4px #00000021;
 }
 
 
@@ -137,8 +151,8 @@ h3 {
     box-shadow: 0px 10px 10px 4px #00000021;
 }
 .footer p {
-    padding:50px;
-    font-size: 1vw;
+    padding:20px;
+    font-size: 1.4vw;
 }
 .footer #inner {
     width:50%;
@@ -155,4 +169,27 @@ h3 {
     border-style: solid;
     border-color: white;
     border-width: 8px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.footer li {
+    display:inline;
+    margin:12px;
+}
+.footer i {
+    font-size: 24px;
+}
+
+
+
+
+
+@keyframes text-expander {
+    from { transform:scale(1,1); }
+    50% { transform:scale(1.025,1.025); }
+    to { transform:scale(1,1); }
 }
